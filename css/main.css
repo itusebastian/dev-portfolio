@@ -194,7 +194,7 @@ p{
 }
 @media only screen and (min-width:1025px){
     .header{
-        display:inline-block;
+        /* display:inline-block; */
         float:left;
         width:100%;
         max-width:380px;
@@ -205,8 +205,8 @@ p{
         padding:70px 30px 45px;
         overflow:auto
     }
-    .header-titles{
-    }
+    /* .header-titles{
+    } */
     ul.main-menu{
         position:absolute;
         padding:15px 0;
@@ -1696,6 +1696,7 @@ textarea.form-control,textarea.form-control:focus{
     border:1px solid #9e9e9e;
     display:block;
     -webkit-backface-visibility:visible;
+    backface-visibility:visible;
     transition:opacity 200ms ease;
     border-radius:30px
 }
