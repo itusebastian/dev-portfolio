@@ -9,15 +9,15 @@ html{
     overflow:hidden
 }
 body{
-    background-color:#09aeea;
-    background:-webkit-gradient(linear,left top,left bottom,from(#21e1ae),to(#09aeea));
-    background:linear-gradient(#21e1ae,#09aeea);
+    background: linear-gradient(130deg, #1E1E1E, #1A1A1A, #1E1E1E);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
     margin:0;
     width:100%;
     height:100%;
     min-height:100%;
     font-size:15px;
-    font-family:poppins,Helvetica,sans-serif;
+    font-family:'Courier New', Courier, monospace;
     line-height:1.65em;
     overflow:hidden;
     color:#d5d5d5;
@@ -27,8 +27,8 @@ body{
     background-size:cover
 }
 h1,h2,h3,h4,h5,h6{
-    color:#eee;
-    font-family:poppins,Helvetica,sans-serif;
+    color:#ccc;
+    font-family:'Courier New', Courier, monospace;
     font-weight:600
 }
 h1{
@@ -83,7 +83,7 @@ p{
     min-height:80vh;
     margin:10vh auto;
     padding:0;
-    background-color:#444;
+    background-color:#000000;
     -webkit-box-shadow:0 0 100px -5px rgba(0,0,0,.25);
     -moz-box-shadow:0 0 100px -5px rgba(0,0,0,.25);
     box-shadow:0 0 100px -5px rgba(0,0,0,.25);
@@ -102,12 +102,12 @@ p{
     line-height:1.2;
     border:0;
     outline:0;
-    border:2px solid #09aeea;
+    border:2px solid #00ff00;
     color:#f5f5f5;
     text-shadow:none;
     background-color:transparent;
     border-radius:30px;
-    font-family:poppins,Helvetica,sans-serif;
+    font-family:'Courier New', Courier, monospace;
     -webkit-transition:all .3s ease-in-out;
     -moz-transition:all .3s ease-in-out;
     -o-transition:all .3s ease-in-out;
@@ -119,9 +119,9 @@ p{
     margin-right:0
 }
 .btn-primary:hover,.btn-primary:focus,button:hover,button:focus,input[type=button]:hover,input[type=button]:focus,input[type=submit]:hover,input[type=submit]:focus{
-    background-color:#09aeea;
+    background-color:#00ff00;
     color:#fff;
-    border:2px solid #09aeea
+    border:2px solid #00ff00
 }
 .btn-secondary{
     border-color:#d5d5d5;
@@ -150,7 +150,7 @@ p{
     width:100%;
     height:100%;
     z-index:9999;
-    background:#222
+    background:#111111
 }
 .preloader-animation{
     position:absolute;
@@ -167,7 +167,7 @@ p{
     width:52px;
     height:52px;
     margin:100px auto;
-    background-color:#09aeea;
+    background-color:#00ff00;
     border-radius:100%;
     -webkit-animation:sk-scaleout 1s infinite ease-in-out;
     animation:sk-scaleout 1s infinite ease-in-out
@@ -212,7 +212,7 @@ p{
         padding:15px 0;
         width:70px;
         right:-90px;
-        background-color:#444;
+        background-color:#000000;
         border-radius:35px;
         z-index:999;
         list-style:none;
@@ -233,7 +233,7 @@ p{
         transition:all .3s ease-in-out
     }
     ul.main-menu a.active,ul.main-menu a:focus,ul.main-menu a:hover{
-        color:#09aeea
+        color:#00ff00
     }
     ul.main-menu .menu-icon{
         display:block;
@@ -244,9 +244,9 @@ p{
         width:auto;
         visibility:hidden;
         opacity:0;
-        color:#fff;
+        color:#000;
         padding:2px 10px;
-        background-color:#09aeea;
+        background-color:#00ff00;
         white-space:nowrap;
         right:0;
         top:-50%;
@@ -270,7 +270,7 @@ p{
     padding:10px 0;
     width:60px;
     right:-80px;
-    background-color:#444;
+    background-color:#000000;
     border-radius:35px;
     z-index:98;
     list-style:none;
@@ -293,7 +293,7 @@ p{
     transition:all .3s ease-in-out
 }
 .lmpixels-arrows-nav div:hover{
-    color:#09aeea
+    color:#00ff00
 }
 .header-photo{
     position:relative;
@@ -334,7 +334,7 @@ p{
 .header-titles h4{
     font-size:18px;
     font-weight:300;
-    color:#bbb;
+    color:#00cc00;
     margin:5px 0;
     line-height:1.2em
 }
@@ -374,11 +374,11 @@ p{
 }
 .header-buttons .btn-primary:hover{
     background-color:#fff;
-    color:#09aeea;
+    color:#00ff00;
     border-color:#fff
 }
 .header .copyrights{
-    color:#bbb;
+    color:#00cc00;
     width:380px;
     position:absolute;
     bottom:0;
@@ -408,7 +408,7 @@ p{
 }
 .animated-section{
     position:absolute;
-    background-color:#222;
+    background-color:#111111;
     height:100%;
     width:100%;
     border-radius:30px;
@@ -429,7 +429,7 @@ p{
 }
 .single-page-content{
     position:absolute;
-    background-color:#222;
+    background-color:#111111;
     height:100%;
     width:100%;
     border-radius:30px;
@@ -452,10 +452,10 @@ p{
     background-color:#b5b6b7
 }
 .ps:hover>.ps__scrollbar-y-rail:hover{
-    background-color:#444
+    background-color:#000000
 }
 .ps:hover>.ps__scrollbar-y-rail:hover>.ps__scrollbar-y{
-    background-color:#09aeea
+    background-color:#00ff00
 }
 .ps>.ps__scrollbar-y-rail{
     width:12px
@@ -467,7 +467,7 @@ p{
     background-color:#555
 }
 .ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y{
-    background-color:#09aeea
+    background-color:#00ff00
 }
 .page-title{
     display:inline-block;
@@ -482,7 +482,7 @@ p{
     z-index:1
 }
 .page-title h2 span{
-    color:#09aeea
+    color:#00ff00
 }
 .page-title:after{
     position:absolute;
@@ -492,9 +492,9 @@ p{
     content:'';
     height:30px;
     width:50px;
-    background-image:-webkit-repeating-radial-gradient(center center,#09aeea,#09aeea 1px,transparent 0px,transparent 100%);
-    background-image:-moz-repeating-radial-gradient(center center,#09aeea,#09aeea 1px,transparent 0px,transparent 100%);
-    background-image:-ms-repeating-radial-gradient(center center,#09aeea,#09aeea 1px,transparent 0px,transparent 100%);
+    background-image:-webkit-repeating-radial-gradient(center center,#00ff00,#00ff00 1px,transparent 0px,transparent 100%);
+    background-image:-moz-repeating-radial-gradient(center center,#00ff00,#00ff00 1px,transparent 0px,transparent 100%);
+    background-image:-ms-repeating-radial-gradient(center center,#00ff00,#00ff00 1px,transparent 0px,transparent 100%);
     -webkit-background-size:6px 6px;
     -moz-background-size:6px 6px;
     background-size:6px 6px;
@@ -525,7 +525,7 @@ p{
     -moz-box-shadow:none;
     box-shadow:none;
     outline:none;
-    font-family:poppins,Helvetica,sans-serif;
+    font-family:'Courier New', Courier, monospace;
     box-shadow:0 10px 10px -8px rgba(0,0,0,.1)
 }
 textarea.form-control,textarea.form-control:focus{
@@ -542,7 +542,7 @@ textarea.form-control,textarea.form-control:focus{
     top:0;
     opacity:0;
     background:0 0;
-    border:2px solid #09aeea;
+    border:2px solid #00ff00;
     border-right-width:0;
     height:100%;
     -webkit-transition:all .3s ease-in-out;
@@ -602,7 +602,7 @@ textarea.form-control,textarea.form-control:focus{
     color:#d3d3d3
 }
 .form-group-with-icon.form-group-focus i{
-    color:#09aeea
+    color:#00ff00
 }
 .form-group.form-group-w-checkbox{
     padding-top:0;
@@ -645,7 +645,7 @@ textarea.form-control,textarea.form-control:focus{
     transition:.3s
 }
 .form-group .form-control:focus~label,.form-group.form-group-focus .form-control~label{
-    color:#09aeea;
+    color:#00ff00;
     top:-20px;
     left:0;
     z-index:1;
@@ -669,7 +669,7 @@ textarea.form-control,textarea.form-control:focus{
     z-index:1
 }
 .block-title h3 span{
-    color:#09aeea
+    color:#00ff00
 }
 .block-title:after{
     position:absolute;
@@ -679,9 +679,9 @@ textarea.form-control,textarea.form-control:focus{
     content:'';
     height:20px;
     width:30px;
-    background-image:-webkit-repeating-radial-gradient(center center,#09aeea,#09aeea 1px,transparent 0px,transparent 100%);
-    background-image:-moz-repeating-radial-gradient(center center,#09aeea,#09aeea 1px,transparent 0px,transparent 100%);
-    background-image:-ms-repeating-radial-gradient(center center,#09aeea,#09aeea 1px,transparent 0px,transparent 100%);
+    background-image:-webkit-repeating-radial-gradient(center center,#00ff00,#00ff00 1px,transparent 0px,transparent 100%);
+    background-image:-moz-repeating-radial-gradient(center center,#00ff00,#00ff00 1px,transparent 0px,transparent 100%);
+    background-image:-ms-repeating-radial-gradient(center center,#00ff00,#00ff00 1px,transparent 0px,transparent 100%);
     -webkit-background-size:6px 6px;
     -moz-background-size:6px 6px;
     background-size:6px 6px;
@@ -717,7 +717,7 @@ textarea.form-control,textarea.form-control:focus{
     margin-bottom:10px
 }
 .info-list .title{
-    color:#09aeea;
+    color:#00ff00;
     margin-right:5px;
     font-weight:600
 }
@@ -738,7 +738,7 @@ textarea.form-control,textarea.form-control:focus{
 .info-block-w-icon i{
     position:relative;
     font-size:42px;
-    color:#09aeea;
+    color:#00ff00;
     opacity:.7
 }
 .lm-info-block{
@@ -749,7 +749,7 @@ textarea.form-control,textarea.form-control:focus{
     margin:0 0 15px;
     background-color:#333;
     padding:20px 10px;
-    border:1px solid #444;
+    border:1px solid #000000;
     -webkit-box-shadow:none;
     -moz-box-shadow:none;
     box-shadow:none;
@@ -763,7 +763,7 @@ textarea.form-control,textarea.form-control:focus{
 .lm-info-block i{
     position:relative;
     font-size:33px;
-    color:#09aeea;
+    color:#00ff00;
     z-index:1
 }
 .lm-info-block h4{
@@ -776,14 +776,14 @@ textarea.form-control,textarea.form-control:focus{
     font-weight:400;
     display:block;
     margin:10px 0;
-    color:#09aeea
+    color:#00ff00
 }
 .lm-info-block .lm-info-block-value:empty{
     margin:0
 }
 .testimonial{
     text-align:center;
-    border:2px solid #444;
+    border:2px solid #000000;
     border-radius:20px;
     margin:45px 2px 10px;
     padding:0 25px 15px
@@ -810,7 +810,7 @@ textarea.form-control,textarea.form-control:focus{
     font-size:30px;
     right:0;
     top:7px;
-    color:#09aeea;
+    color:#00ff00;
     opacity:.5
 }
 .testimonial .author-info .author{
@@ -847,12 +847,12 @@ textarea.form-control,textarea.form-control:focus{
 .testimonials.owl-carousel .owl-nav .owl-prev,.testimonials.owl-carousel .owl-nav .owl-next,.clients.owl-carousel .owl-nav .owl-prev,.clients.owl-carousel .owl-nav .owl-next{
     position:relative;
     display:inline-block;
-    background-color:#444;
-    border:1px solid #444;
+    background-color:#000000;
+    border:1px solid #000000;
     border-radius:5px;
     -webkit-transition-duration:.2s;
     transition-duration:.2s;
-    font-family:"font awesome 5 free";
+    font-family:'Courier New', Courier, monospace;
     font-size:11px;
     font-weight:900;
     -moz-osx-font-smoothing:grayscale;
@@ -885,8 +885,8 @@ textarea.form-control,textarea.form-control:focus{
     content:"\f054"
 }
 .testimonials.owl-carousel .owl-nav .owl-prev:hover,.testimonials.owl-carousel .owl-nav .owl-next:hover,.clients.owl-carousel .owl-nav .owl-prev:hover,.clients.owl-carousel .owl-nav .owl-next:hover{
-    background-color:#09aeea;
-    border-color:#09aeea;
+    background-color:#00ff00;
+    border-color:#00ff00;
     color:#fff
 }
 .timeline-second-style .timeline-item{
@@ -923,7 +923,7 @@ textarea.form-control,textarea.form-control:focus{
     left:30%;
     bottom:0;
     width:1px;
-    background-color:#444
+    background-color:#000000
 }
 .timeline-second-style .divider:before{
     content:'';
@@ -935,7 +935,7 @@ textarea.form-control,textarea.form-control:focus{
     position:absolute;
     margin-left:-8px;
     border-radius:10px;
-    background-color:#09aeea;
+    background-color:#00ff00;
     opacity:.25;
     z-index:0
 }
@@ -947,9 +947,9 @@ textarea.form-control,textarea.form-control:focus{
     width:9px;
     height:9px;
     margin-left:-4px;
-    background-color:#222;
+    background-color:#111111;
     border-radius:5px;
-    border:2px solid #09aeea;
+    border:2px solid #00ff00;
     z-index:1
 }
 .timeline-second-style .item-title{
@@ -993,8 +993,8 @@ textarea.form-control,textarea.form-control:focus{
 .skills-second-style .skill-container{
     position:relative;
     display:inline-block;
-    background-color:#222;
-    border:1px solid #09aeea;
+    background-color:#111111;
+    border:1px solid #00ff00;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;
     border-radius:8px;
@@ -1008,7 +1008,7 @@ textarea.form-control,textarea.form-control:focus{
 .skills-second-style .skill-container:before{
     content:'';
     position:absolute;
-    background-color:#09aeea
+    background-color:#00ff00
 }
 .skills-second-style .skill-value{
     font-size:11px;
@@ -1019,8 +1019,8 @@ textarea.form-control,textarea.form-control:focus{
     color:#aaa
 }
 .skills-second-style .skill-percentage{
-    background-color:#09aeea;
-    border:2px solid #222;
+    background-color:#00ff00;
+    border:2px solid #111111;
     -moz-border-radius:9px;
     -webkit-border-radius:9px;
     border-radius:9px;
@@ -1072,7 +1072,7 @@ textarea.form-control,textarea.form-control:focus{
 }
 .knowledges li{
     display:inline-block;
-    background-color:#09aeea;
+    background-color:#00ff00;
     border-radius:3px;
     color:#fff;
     padding:1px 10px;
@@ -1084,7 +1084,7 @@ textarea.form-control,textarea.form-control:focus{
     display:table;
     table-layout:fixed;
     width:100%;
-    border:2px solid #444;
+    border:2px solid #000000;
     border-radius:8px;
     margin-bottom:20px;
     -webkit-transition:all 2s ease-in-out;
@@ -1097,7 +1097,7 @@ textarea.form-control,textarea.form-control:focus{
     display:table-cell;
     width:120px;
     height:100%;
-    background-color:#444;
+    background-color:#000000;
     padding:25px;
     vertical-align:middle;
     border-top-left-radius:6px;
@@ -1252,8 +1252,8 @@ textarea.form-control,textarea.form-control:focus{
     opacity:0;
     width:30px;
     height:30px;
-    background-color:#222;
-    color:#09aeea;
+    background-color:#111111;
+    color:#00ff00;
     text-align:center;
     line-height:30px;
     -webkit-transition:all .3s ease-in-out;
@@ -1271,7 +1271,7 @@ textarea.form-control,textarea.form-control:focus{
 .portfolio-grid figure .category{
     display:inline-block;
     padding:2px 7px;
-    background-color:#222;
+    background-color:#111111;
     color:#f5f5f5;
     font-size:11px;
     line-height:1.2em;
@@ -1309,7 +1309,7 @@ textarea.form-control,textarea.form-control:focus{
     display:block;
     position:relative;
     padding:0;
-    background:#444
+    background:#000000
 }
 .blog-card .post-image{
     width:100%;
@@ -1335,7 +1335,7 @@ textarea.form-control,textarea.form-control:focus{
 }
 .blog-card .post-info{
     padding:1em 1.4em 1.4em;
-    border:1px solid #444;
+    border:1px solid #000000;
     border-top:0
 }
 .blog-card .blog-item-title{
@@ -1353,7 +1353,7 @@ textarea.form-control,textarea.form-control:focus{
     padding:2px 7px;
     line-height:1.2em;
     font-size:11px;
-    color:#222;
+    color:#111111;
     z-index:3
 }
 .blog-card .post-date{
@@ -1385,7 +1385,7 @@ textarea.form-control,textarea.form-control:focus{
     background:#4f565e;
     background:rgba(0,0,0,.12);
     display:inline-block;
-    font-family:linearicons-free;
+    font-family:'Courier New', Courier, monospace;
     font-style:normal;
     font-weight:400;
     font-variant:normal;
@@ -1446,7 +1446,7 @@ textarea.form-control,textarea.form-control:focus{
 .ajax-page-content{
     height:100%;
     overflow:auto;
-    background-color:#222
+    background-color:#111111
 }
 .ajax-page-wrapper{
     max-width:1170px;
@@ -1467,10 +1467,10 @@ textarea.form-control,textarea.form-control:focus{
     width:40px;
     text-align:center;
     color:#b5b5b5;
-    background-color:#444
+    background-color:#000000
 }
 .ajax-page-nav>div.nav-item a:hover{
-    background-color:#09aeea;
+    background-color:#00ff00;
     color:#fff
 }
 .ajax-page-nav>div.nav-item a i{
@@ -1516,7 +1516,7 @@ textarea.form-control,textarea.form-control:focus{
     margin:0 0 10px
 }
 .project-general-info .fa{
-    color:#09aeea;
+    color:#00ff00;
     margin-right:5px
 }
 .project-general-info p{
@@ -1533,8 +1533,8 @@ textarea.form-control,textarea.form-control:focus{
     width:28px;
     height:28px;
     color:#b5b5b5;
-    background-color:#222;
-    border:1px solid #222;
+    background-color:#111111;
+    border:1px solid #111111;
     text-align:center;
     border-radius:0
 }
@@ -1543,8 +1543,8 @@ textarea.form-control,textarea.form-control:focus{
 }
 .share-buttons a:hover{
     color:#fff;
-    background-color:#09aeea;
-    border-color:#09aeea
+    background-color:#00ff00;
+    border-color:#00ff00
 }
 .share-buttons a:last-child{
     margin-right:0;
@@ -1574,9 +1574,9 @@ textarea.form-control,textarea.form-control:focus{
     line-height:1.5em;
     color:#e5e5e5;
     padding:2px 7px;
-    background-color:#444;
+    background-color:#000000;
     border-radius:3px;
-    border:1px solid #444;
+    border:1px solid #000000;
     margin:3px 2px 2px
 }
 .tags a:first-child{
@@ -1637,7 +1637,7 @@ textarea.form-control,textarea.form-control:focus{
     -o-transition:all .3s ease-in-out;
     -ms-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out;
-    font-family:"font awesome 5 free";
+    font-family:'Courier New', Courier, monospace;
     font-size:24px;
     font-weight:900;
     line-height:30px;
@@ -1714,7 +1714,7 @@ textarea.form-control,textarea.form-control:focus{
     margin-right:40px;
     padding-left:30px;
     padding-right:30px;
-    background-color:#222;
+    background-color:#111111;
     z-index:1
 }
 .entry-header{
@@ -1739,7 +1739,7 @@ textarea.form-control,textarea.form-control:focus{
     display:inline-block;
     width:100%;
     background-color:#333;
-    border:1px solid #444;
+    border:1px solid #000000;
     padding:0 10px;
     margin:30px 0 0
 }
@@ -1808,7 +1808,7 @@ blockquote{
         top:0;
         right:0;
         bottom:0;
-        background-color:#444;
+        background-color:#000000;
         z-index:99;
         padding:30px 30px 10px;
         text-align:center;
@@ -1892,7 +1892,7 @@ blockquote{
         height:48px;
         line-height:46px;
         text-align:center;
-        background-color:#09aeea;
+        background-color:#00ff00;
         right:10px;
         font-size:19px;
         top:10px;
@@ -1973,7 +1973,7 @@ blockquote{
         right:10px;
         bottom:10px;
         padding:5px 0;
-        border:2px solid #09aeea
+        border:2px solid #00ff00
     }
     .lmpixels-arrows-nav div{
         font-size:24px
@@ -2072,7 +2072,7 @@ blockquote{
 }
 .fw-pricing .fw-package{
     background-color:#333;
-    border:2px solid #444;
+    border:2px solid #000000;
     border-radius:15px;
     padding:30px;
     margin-bottom:10px;
@@ -2111,7 +2111,7 @@ blockquote{
     content:'';
     height:2px;
     margin-top:0;
-    background-color:#09aeea;
+    background-color:#00ff00;
     position:absolute;
     left:0;
     bottom:-3px;
@@ -2147,27 +2147,28 @@ blockquote{
 }
 .fw-table table{
     width:100%;
-    border:1px solid #eee;
+    border:1px solid #ccc;
     font-size:.875em
 }
 .fw-table table tr,.fw-table table tr.heading-row{
-    border-bottom:1px solid #eee
+    border-bottom:1px solid #ccc
 }
 .fw-table table tr:not(.heading-row):last-child{
     border-bottom:0
 }
 .fw-table table th{
     padding:7px 12px;
-    border-right:1px solid #eee
+    border-right:1px solid #ccc
 }
 .fw-table table td{
     padding:7px 12px;
-    border-right:1px solid #eee
+    border-right:1px solid #ccc
 }
 .fw-table table td:last-child{
     border-right:0
 }
 .lm-animated-bg{
+    display: none; /* Hiding the previous background */
     position:absolute;
     width:auto;
     height:auto;
@@ -2179,6 +2180,15 @@ blockquote{
     background-size:cover;
     background-repeat:no-repeat;
     z-index:-1
+}
+
+#matrix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 .vcentered{
     vertical-align:middle;
@@ -2264,7 +2274,7 @@ blockquote{
     margin:0 0 15px;
     background:#333;
     padding:25px 10px 15px;
-    border:2px solid #444;
+    border:2px solid #000000;
     border-radius:10px;
     -webkit-box-shadow:none;
     -moz-box-shadow:none;
@@ -2296,7 +2306,7 @@ blockquote{
 .fun-fact i{
     position:relative;
     font-size:33px;
-    color:#09aeea;
+    color:#00ff00;
     margin-bottom:6px;
     width:33px;
     height:33px
@@ -2306,7 +2316,7 @@ blockquote{
     font-weight:400;
     display:block;
     margin:10px 0;
-    color:#09aeea
+    color:#00ff00
 }
 .fun-fact-block-value{
     color:#aaa;
@@ -2340,3 +2350,26 @@ blockquote{
     line-height:1;
     border:none
 }
+
+.sp-subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: #00ff00;
+  }
+  
+  .sp-subtitle::after {
+    content: '|';
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+    color: #00ff00;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  
+  

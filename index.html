@@ -24,7 +24,8 @@
 
   <body cz-shortcut-listen="true">
     <!-- Animated Background -->
-    <div class="lm-animated-bg" style="background-image: url(&quot;img/main_bg.png&quot;); background-position: calc(50% + 8.8177px) calc(50% + 2.10426px);"></div>
+    <div class="lm-animated-bg"></div>
+    <canvas id="matrix"></canvas>
     <!-- /Animated Background -->
 
     <!-- Loading animation -->
@@ -42,11 +43,11 @@
           <header id="site_header" class="header mobile-menu-hide">
             <div class="header-content">
               <div class="header-photo">
-                <img src="img/main_photo.jpg" alt="Alex Smith">
+                <img src="img/main_photo.jpeg" alt="Sebastián Iturralde">
               </div>
               <div class="header-titles">
                 <h2>Sebastián Iturralde</h2>
-                <h4>Desarrollador Front-end</h4>
+                <h4 class="sp-subtitle" id="typed-text"></h4>
               </div>
             </div>
 
@@ -120,35 +121,19 @@
           <div class="content-area">
             <div class="animated-sections">
               <!-- Home Subpage -->
-              <section data-id="home" class="animated-section start-page ps ps--theme_default section-active" data-ps-id="53438f82-bb05-36fb-4286-308164c56650">
+              <section data-id="home" class="animated-section start-page ps ps--theme_default section-active">
                 <div class="section-content vcentered">
-
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="title-block">
-                          <h2>Sebastián Iturralde</h2>
-                          <div class="owl-carousel text-rotation owl-loaded owl-drag">                                    
-                            
-                            
-                            
-                          <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2202px, 0px, 0px); transition: all; width: 4404px;"><div class="owl-item cloned" style="width: 734px;"><div class="item">
-                              <div class="sp-subtitle">Diseñador Web</div>
-                            </div></div><div class="owl-item cloned" style="width: 734px;"><div class="item">
-                              <div class="sp-subtitle">Desarrollador Front-end</div>
-                            </div></div><div class="owl-item" style="width: 734px;"><div class="item">
-                              <div class="sp-subtitle">Diseñador Web</div>
-                            </div></div><div class="owl-item active" style="width: 734px;"><div class="item">
-                              <div class="sp-subtitle">Desarrollador Front-end</div>
-                            </div></div><div class="owl-item cloned" style="width: 734px;"><div class="item">
-                              <div class="sp-subtitle">Diseñador Web</div>
-                            </div></div><div class="owl-item cloned" style="width: 734px;"><div class="item">
-                              <div class="sp-subtitle">Desarrollador Front-end</div>
-                            </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots disabled"></div></div>
-                        </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="title-block">
+                        <h2>Sebastián Iturralde</h2>
+                        <div class="sp-subtitle" id="typed-text"></div>
                       </div>
                     </div>
-
+                  </div>
                 </div>
+              </section>
+              
               <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></section>
               <!-- End of Home Subpage -->
 
