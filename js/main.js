@@ -307,4 +307,16 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(type, delayBetweenTexts);
   });
   
-  
+  document.addEventListener("DOMContentLoaded", () => {
+    // Typing effect code...
+    
+    function updateDateTime() {
+        const now = new Date();
+        const datetimeElement = document.getElementById('datetime');
+        datetimeElement.innerHTML = now.toLocaleString();
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime(); // Initial call to set the date and time immediately
+});
+
