@@ -1396,7 +1396,7 @@ textarea.form-control,textarea.form-control:focus{
     background: #4f565e; /* Fallback color */
     background: rgba(0, 0, 0, .12); /* Semi-transparent black */
     display: inline-block;
-    font-family: 'Montserrat', sans-serif; /* Font family */
+    font-family: linearicons-free; /* Font family */
     font-style: normal;
     font-weight: 400; /* Normal weight */
     font-variant: normal;
