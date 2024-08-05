@@ -307,16 +307,26 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(type, delayBetweenTexts);
   });
   
-  document.addEventListener("DOMContentLoaded", () => {
-    // Typing effect code...
-    
-    function updateDateTime() {
-        const now = new Date();
-        const datetimeElement = document.getElementById('datetime');
-        datetimeElement.innerHTML = now.toLocaleString();
+  document.addEventListener('DOMContentLoaded', () => {
+    const birthDate = new Date('1982-12-18'); // Replace with your birthdate
+    const ageElement = document.getElementById('age');
+    const yearElement = document.getElementById('year');
+
+    function calculateAge(birthDate) {
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
     }
 
-    setInterval(updateDateTime, 1000);
-    updateDateTime(); // Initial call to set the date and time immediately
+    const age = calculateAge(birthDate);
+    ageElement.textContent = age;
+
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
 });
+
 
