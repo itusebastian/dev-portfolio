@@ -12,10 +12,10 @@ Instalación
 Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
     Clona el Repositorio:
-    git clone https://github.com/tu-usuario/tu-repositorio.git
+    git clone https://github.com/itusebastian/portafolio.git
 
     Navega a la Carpeta del Proyecto:
-    cd tu-repositorio
+    cd mi-portafolio
 
     Abre el Archivo HTML:
     Abre el archivo index.html en tu navegador web preferido para ver el portafolio en acción.
@@ -40,7 +40,7 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE
 Contacto
 
     Nombre: Sebastián Iturralde
-    Correo Electrónico: dev@example.com
-    GitHub: github.com/tu-usuario
+    Correo Electrónico: dev@itusebastian.com
+    GitHub: github.com/itusebastian
 
 ¡Gracias por visitar el portafolio de Sebastián Iturralde!
