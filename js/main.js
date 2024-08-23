@@ -395,9 +395,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // Minimize button event listener
-document
-  .getElementById("minimize-button")
-  .addEventListener("click", function () {
-    var page = document.querySelector(".page");
-    page.classList.toggle("minimized");
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("minimize-button")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      var page = document.querySelector(".page");
+      page.classList.toggle("minimized");
+
+      // Stop further event propagation to prevent conflicts with other handlers
+      e.stopPropagation();
+    });
+});
