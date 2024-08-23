@@ -454,21 +454,6 @@ input[type="submit"]:focus {
   width: 100%;
   max-width: calc(100% - 380px);
 }
-.minimize-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1000; /* Ensure the button is above other content */
-}
-.page-content.minimized {
-  display: none;
-}
 .animated-sections {
   position: relative;
   height: 100%;

@@ -324,15 +324,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(type, delayBetweenTexts);
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const minimizeBtn = document.querySelector(".minimize-btn");
-  const pageContent = document.querySelector(".page-content");
-
-  minimizeBtn.addEventListener("click", function () {
-    if (pageContent.classList.contains("minimized")) {
-      pageContent.classList.remove("minimized");
-    } else {
-      pageContent.classList.add("minimized");
-    }
-  });
-});
