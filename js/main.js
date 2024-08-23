@@ -395,13 +395,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // Minimize button event listener
-document
-  .getElementById("minimize-button")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-    e.stopImmediatePropagation();
-    console.log("Minimize button clicked");
+document.addEventListener("DOMContentLoaded", function () {
+  var minimizeButton = document.getElementById("minimize-button");
+  if (minimizeButton) {
+    minimizeButton.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      console.log("Minimize button clicked");
 
-    var page = document.querySelector(".page");
-    page.classList.toggle("minimized");
-  });
+      var page = document.querySelector(".page");
+      if (page) {
+        page.classList.toggle("minimized");
+      }
+    });
+  } else {
+    console.log("Minimize button not found");
+  }
+});
