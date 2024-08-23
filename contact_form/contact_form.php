@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Verificar reCAPTCHA
-    $recaptcha_secret = '6LfZM1QcAAAAAGNqoBYizL2nlhtmrkHp4yrEX3J4'; // Cambia esto por tu clave secreta de reCAPTCHA
+    $recaptcha_secret = ''; // Cambia esto por tu clave secreta de reCAPTCHA
     $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
     $recaptcha_data = array(
         'secret' => $recaptcha_secret,

@@ -1,4 +1,5 @@
 # Portafolio de Sebastián Iturralde
+
 Descripción
 
 Este es el portafolio en línea de Sebastián Iturralde, diseñado para mostrar sus habilidades y proyectos como desarrollador. La página está creada utilizando HTML, CSS y JavaScript, y presenta un diseño de estilo "hacker" con un efecto de tipeo y una consola interactiva.
@@ -12,7 +13,7 @@ Instalación
 Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
     Clona el Repositorio:
-    git clone https://github.com/itusebastian/portafolio.git
+    git clone https://github.com/itusebastian/portfolio.git
 
     Navega a la Carpeta del Proyecto:
     cd mi-portafolio
@@ -22,7 +23,7 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 Uso
 
-El portafolio muestra automáticamente el contenido al abrir el archivo index.html. Puedes interactuar con la consola en la parte inferior de la página para probar los comandos y activar el easter egg.
+El portafolio muestra automáticamente el contenido al abrir el archivo index.html. Puedes interactuar con la consola en la parte inferior de la página para probar los comandos.
 
 Contribuciones
 

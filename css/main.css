@@ -81,6 +81,12 @@ p {
   min-height: 100%;
   padding: 0 100px;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.page.minimized {
+  transform: scale(0.1) translateX(300%);
+  opacity: 0;
+  pointer-events: none;
 }
 .page-content {
   position: relative;
@@ -97,6 +103,7 @@ p {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .btn-primary,
 .btn-secondary,

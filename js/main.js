@@ -394,3 +394,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+document
+  .getElementById("minimize-button")
+  .addEventListener("click", function () {
+    var page = document.querySelector(".page");
+    page.classList.toggle("minimized");
+  });
