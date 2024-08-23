@@ -324,73 +324,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(type, delayBetweenTexts);
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const minimizeBtn = document.querySelector(".minimize-btn");
+  const pageContent = document.querySelector(".page-content");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const birthDate = new Date("1982-12-18"); // Replace with your birthdate
-  const ageElement = document.getElementById("age");
-  const yearElement = document.getElementById("year");
-
-  function calculateAge(birthDate) {
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-    }
-    return age;
-  }
-
-  const age = calculateAge(birthDate);
-  ageElement.textContent = age;
-
-  const currentYear = new Date().getFullYear();
-  yearElement.textContent = currentYear;
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const inputElement = document.getElementById("input");
-  const outputElement = document.getElementById("output");
-  const easterEggElement = document.getElementById("easter-egg");
-  const secretSequence = "hack";
-  let currentInput = "";
-
-  // Store a few mock commands
-  const commands = {
-    help: "Available commands: help, about, clear",
-    about: "This is a terminal designed by Sebastián Iturralde.",
-    clear: "",
-  };
-
-  // Function to execute the entered command
-  function executeCommand(command) {
-    if (command in commands) {
-      if (command === "clear") {
-        outputElement.innerHTML = ""; // Clear the terminal
-      } else {
-        outputElement.innerHTML += `<div>${commands[command]}</div>`;
-      }
+  minimizeBtn.addEventListener("click", function () {
+    if (pageContent.classList.contains("minimized")) {
+      pageContent.classList.remove("minimized");
     } else {
-      outputElement.innerHTML += `<div>Command not found: ${command}</div>`;
-    }
-    inputElement.value = ""; // Clear the input field
-    currentInput = ""; // Reset the current input
-  }
-
-  // Function to check for easter egg
-  function checkEasterEgg() {
-    if (currentInput === secretSequence) {
-      easterEggElement.classList.remove("hidden");
-      easterEggElement.classList.add("visible");
-    }
-  }
-
-  // Event listener for handling input
-  inputElement.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-      executeCommand(inputElement.value.trim());
-    } else {
-      currentInput += event.key;
-      checkEasterEgg();
+      pageContent.classList.add("minimized");
     }
   });
 });
