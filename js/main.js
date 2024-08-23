@@ -400,10 +400,9 @@ document.addEventListener("DOMContentLoaded", function () {
     .getElementById("minimize-button")
     .addEventListener("click", function (e) {
       e.preventDefault();
+      console.log("Minimize button clicked");
       var page = document.querySelector(".page");
       page.classList.toggle("minimized");
-
-      // Stop further event propagation to prevent conflicts with other handlers
       e.stopPropagation();
     });
 });
