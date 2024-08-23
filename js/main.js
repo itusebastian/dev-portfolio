@@ -394,18 +394,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-// Minimize button event listener
-document.addEventListener("DOMContentLoaded", function () {
-  document.body.addEventListener("click", function (e) {
-    if (e.target.closest("#minimize-button")) {
-      e.preventDefault();
-      e.stopImmediatePropagation(); // Ensure the event does not propagate further
-      console.log("Minimize button clicked");
-
-      var page = document.querySelector(".page");
-      if (page) {
-        page.classList.toggle("minimized");
-      }
-    }
-  });
-});
