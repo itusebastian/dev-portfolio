@@ -397,7 +397,11 @@ document.addEventListener("DOMContentLoaded", () => {
 // Minimize button event listener
 document
   .getElementById("minimize-button")
-  .addEventListener("click", function () {
+  .addEventListener("click", function (e) {
+    e.preventDefault();
     var page = document.querySelector(".page");
     page.classList.toggle("minimized");
+
+    // Stop further event propagation to prevent conflicts with PageTransitions
+    e.stopPropagation();
   });

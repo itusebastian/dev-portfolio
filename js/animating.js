@@ -24,6 +24,11 @@ var PageTransitions = (function ($, options) {
       }
     });
     $(".nav-anim").on("click", function (e) {
+      // Prevent the minimize button from triggering page transitions
+      if ($(this).hasClass("nav-minimize")) {
+        return;
+      }
+
       e.preventDefault();
       if (isAnimating) {
         return false;
