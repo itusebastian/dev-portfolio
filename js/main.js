@@ -396,13 +396,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Minimize button event listener
 document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("minimize-button")
-    .addEventListener("click", function (e) {
+  var minimizeButton = document.getElementById("minimize-button");
+  if (minimizeButton) {
+    minimizeButton.addEventListener("click", function (e) {
       e.preventDefault();
       console.log("Minimize button clicked");
       var page = document.querySelector(".page");
-      page.classList.toggle("minimized");
+      if (page) {
+        page.classList.toggle("minimized");
+      } else {
+        console.log("Page element not found");
+      }
       e.stopPropagation();
     });
+  }
 });
