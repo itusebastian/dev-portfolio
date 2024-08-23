@@ -394,7 +394,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-// Minimize main section to show background
+// Minimize button event listener
 document
   .getElementById("minimize-button")
   .addEventListener("click", function () {
