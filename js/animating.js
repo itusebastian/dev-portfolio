@@ -38,19 +38,7 @@ var PageTransitions = (function ($, options) {
       Animate(pageTrigger);
       location.hash = $(this).attr("href");
     });
-    window.onhashchange = function (event) {
-      if (location.hash) {
-        if (isAnimating) {
-          return false;
-        }
-        var menuLink = $(
-          menu + ' a[href*="' + location.hash.split("/")[0] + '"]'
-        );
-        activeMenuItem(menuLink);
-        Animate(menuLink);
-        ajaxLoader();
-      }
-    };
+
     var menu = options.menu,
       pageStart = getActiveSection();
     location.hash = pageStart;
@@ -65,7 +53,7 @@ var PageTransitions = (function ($, options) {
       var activeItem = $(".main-menu a.active").parent("li");
       activeItem.next("li").children("a").click();
       if (activeItem.is(":last-child")) {
-        $(".main-menu li:first-child").children("a").click();
+        $(". li:first-child").children("a").click();
       }
     });
     $(".lmpixels-arrow-left").click(function () {
