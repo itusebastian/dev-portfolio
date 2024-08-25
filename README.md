@@ -1,47 +1,48 @@
-# Portafolio de Sebastián Iturralde
+# My Dev Portfolio
 
-Descripción
+Welcome to my development portfolio repository! Here, I document my journey as I grow and develop my skills as a software developer. Starting from zero in August 2025, this portfolio will be my living record of progress, challenges, and achievements.
 
-Este es el portafolio en línea de Sebastián Iturralde, diseñado para mostrar sus habilidades y proyectos como desarrollador. La página está creada utilizando HTML, CSS y JavaScript, y presenta un diseño de estilo "hacker" con un efecto de tipeo y una consola interactiva.
+## About
 
-Características
+This portfolio serves as a hub for all my projects, coding exercises, and learning milestones. Whether it's my first simple script, an exciting new web app, or a deeper dive into complex algorithms, this repository will showcase my growth.
 
-    Efecto de Tipeo: Presenta una animación de tipeo que muestra un mensaje personalizado.
+### Features
 
-Instalación
+- **Progress Tracking**: Documenting every step of my learning process, starting from zero.
+- **Projects & Challenges**: Showcasing the projects I'm working on, including source code and explanations.
+- **Tech Stack**: Listing the technologies I'm learning and using as I progress.
+- **Portfolio Website**: A live version of my portfolio will be hosted and accessible at [dev.itusebastian.com](https://dev.itusebastian.com).
 
-Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
+## Technologies
 
-    Clona el Repositorio:
-    git clone https://github.com/itusebastian/portfolio.git
+Below is a list of the tools and languages I’m learning and plan to incorporate into my portfolio:
 
-    Navega a la Carpeta del Proyecto:
-    cd mi-portafolio
+- **HTML/CSS**
+- **JavaScript**
+- **React.js**
+- **Node.js**
+- **Python**
+- **Git & GitHub**
+- **More coming soon!**
 
-    Abre el Archivo HTML:
-    Abre el archivo index.html en tu navegador web preferido para ver el portafolio en acción.
+## Future Goals
 
-Uso
+This portfolio is just the beginning. Here's what I aim to accomplish:
 
-El portafolio muestra automáticamente el contenido al abrir el archivo index.html. Puedes interactuar con la consola en la parte inferior de la página para probar los comandos.
+1. Build and deploy real-world applications.
+2. Deepen my understanding of algorithms and data structures.
+3. Contribute to open source projects.
+4. Expand my knowledge into more advanced technologies and frameworks.
 
-Contribuciones
+## Get in Touch
 
-Las contribuciones son bienvenidas. Si quieres mejorar este proyecto, por favor, sigue estos pasos:
+If you have feedback, suggestions, or just want to connect, feel free to reach out to me:
 
-    Haz un fork del repositorio.
-    Crea una rama para tu característica o corrección: git checkout -b feature/nueva-caracteristica
-    Realiza tus cambios y haz commit: git commit -am 'Añadir nueva característica'
-    Envía tus cambios a tu fork: git push origin feature/nueva-caracteristica
-    Crea un pull request en el repositorio original.
+- **Email**: dev@itusebastian.com
+- **LinkedIn**: [itusebastian](https://www.linkedin.com/in/itusebastian)
+- **GitHub**: [itusebastian](https://github.com/itusebastian)
 
-Licencia
+Thank you for stopping by and checking out my journey!
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
-Contacto
-
-    Nombre: Sebastián Iturralde
-    Correo Electrónico: dev@itusebastian.com
-    GitHub: github.com/itusebastian
-
-¡Gracias por visitar el portafolio de Sebastián Iturralde!
+---
+_Started in August 2025_
