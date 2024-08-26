@@ -1,6 +1,6 @@
 # My Dev Portfolio
 
-Welcome to my development portfolio repository! Here, I document my journey as I grow and develop my skills as a software developer. Starting from zero in August 2025, this portfolio will be my living record of progress, challenges, and achievements.
+Welcome to my development portfolio repository! Here, I document my journey as I grow and develop my skills as a software developer. Starting from zero in June 2025, this portfolio will be my living record of progress, challenges, and achievements.
 
 ## About
 
