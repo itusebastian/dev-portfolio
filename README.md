@@ -45,4 +45,4 @@ If you have feedback, suggestions, or just want to connect, feel free to reach o
 Thank you for stopping by and checking out my journey!
 
 ---
-_Started in August 2025_
+_Started in June 2024_
