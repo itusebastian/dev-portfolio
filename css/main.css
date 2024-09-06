@@ -1954,6 +1954,14 @@ blockquote {
   border-left: 2px solid #d8d8d8;
   font-style: italic;
 }
+.nothing-found h1 {
+  font-size: 160px;
+  line-height: 1.2em;
+  margin: 0;
+    margin-top: 0px;
+  color: #e5e5e5;
+  text-align: center;
+}
 @media only screen and (max-width: 1280px) {
   .page {
     padding-left: 30px;
