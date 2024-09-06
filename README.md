@@ -1,7 +1,6 @@
-# My Dev Portfolio
-
 ![image](https://github.com/user-attachments/assets/bfa44066-044a-4383-85c3-939a8fef3bc3)
 
+# My Dev Portfolio
 
 Welcome to my development portfolio repository! Here, I document my journey as I grow and develop my skills as a software developer. Starting from zero in June 2024, this portfolio will be my living record of progress, challenges, and achievements.
 
