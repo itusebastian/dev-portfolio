@@ -290,7 +290,7 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const typedText = document.getElementById("typed-text");
-  const textArray = ["Desarrollador", "Developer"];
+  const textArray = ["Desarrollador", "Autor"];
   const typingSpeed = 100;
   const erasingSpeed = 50;
   const delayBetweenTexts = 2000;
