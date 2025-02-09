@@ -324,3 +324,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(type, delayBetweenTexts);
 });
+
+function togglePageContent() {
+  var pageContent = document.querySelector('.page-content');
+  if (pageContent.style.display === 'none') {
+    pageContent.style.display = 'block';
+  } else {
+    pageContent.style.display = 'none';
+  }
+}
+
