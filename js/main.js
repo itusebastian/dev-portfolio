@@ -326,11 +326,113 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function togglePageContent() {
+  var elementsToToggle = [
+    '.header-content',
+    '.social-links',
+    '.header-buttons',
+    '.copyrights',
+    '.content-area',
+    '.lmpixels-arrows-nav'
+  ];
+
+  elementsToToggle.forEach(function(selector) {
+    var elements = document.querySelectorAll(selector);
+    elements.forEach(function(element) {
+      // Verificar si el elemento está visible o no
+      if (element.style.opacity === '0') {
+        element.style.opacity = '1';
+        element.style.visibility = 'visible';
+      } else {
+        element.style.opacity = '0';
+        element.style.visibility = 'hidden';
+      }
+    });
+  });
+
   var pageContent = document.querySelector('.page-content');
-  if (pageContent.style.display === 'none') {
-    pageContent.style.display = 'block';
-  } else {
-    pageContent.style.display = 'none';
+  if (pageContent) {
+    if (pageContent.style.backgroundColor) {
+      pageContent.style.backgroundColor = '';
+    } else {
+      pageContent.style.backgroundColor = 'transparent';
+    }
+  }
+
+  var mainMenu = document.querySelector('.main-menu');
+  if (mainMenu) {
+    if (mainMenu.dataset.state === 'default') {
+      mainMenu.innerHTML = `
+        <li>
+          <a href="https://dev.itusebastian.com/" class="nav-anim">
+            <span class="menu-icon lnr lnr-power-switch"></span>
+            <span class="link-text">Apagar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#feature1" class="nav-anim">
+            <span class="menu-icon lnr lnr-star"></span>
+            <span class="link-text">Demo 1</span>
+          </a>
+        </li>
+        <li>
+          <a href="#feature2" class="nav-anim">
+            <span class="menu-icon lnr lnr-cog"></span>
+            <span class="link-text">Demo 2</span>
+          </a>
+        </li>
+        <li>
+          <a href="#feature3" class="nav-anim">
+            <span class="menu-icon lnr lnr-bulb"></span>
+            <span class="link-text">Demo 3</span>
+          </a>
+        </li>
+      `;
+      mainMenu.dataset.state = 'alt';
+    } else {
+      mainMenu.innerHTML = `
+        <li class="active">
+          <a href="#home" class="nav-anim active">
+            <span class="menu-icon lnr lnr-home"></span>
+            <span class="link-text">Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about-me" class="nav-anim">
+            <span class="menu-icon lnr lnr-rocket"></span>
+            <span class="link-text">Viaje</span>
+          </a>
+        </li>
+        <li>
+          <a href="#resume" class="nav-anim">
+            <span class="menu-icon lnr lnr-user"></span>
+            <span class="link-text">Perfil</span>
+          </a>
+        </li>
+        <li>
+          <a href="#blog" class="nav-anim">
+            <span class="menu-icon lnr lnr-sync"></span>
+            <span class="link-text">Proceso</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-anim">
+            <span class="menu-icon lnr lnr-envelope"></span>
+            <span class="link-text">Contacto</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="nav-anim" onclick="togglePageContent()">
+            <span class="menu-icon lnr lnr-power-switch"></span>
+            <span class="link-text">Encender</span>
+          </a>
+        </li>
+      `;
+      mainMenu.dataset.state = 'default';
+    }
   }
 }
 
+// Agregar las transiciones a los elementos
+document.querySelectorAll('.header-content, .social-links, .header-buttons, .copyrights, .content-area').forEach(function(element) {
+  element.style.transition = 'opacity 0.5s ease, visibility 0s 0.5s'; // Transición suave
+});
